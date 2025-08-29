@@ -1,13 +1,17 @@
-# Bajaj-Java-Submission
+## HRX Challenge - Java Submission
 
-# HRX Hiring Challenge – Java Submission
+### Project Description
 
-This repository contains the Java solution for the HRX Hiring Challenge.
+This is a Spring Boot application for the HRX hiring challenge. The application:
 
----
+1. Generates a webhook on startup using candidate details.
+2. Determines the SQL query to submit based on the candidate registration number.
+3. Saves the SQL query to a local file.
+4. Submits the SQL query to the received webhook URL using JWT authentication.
 
-## Repository Structure
+### Repository Structure
 
+```
 .
 ├── final-query.txt
 ├── pom.xml
@@ -39,17 +43,30 @@ This repository contains the Java solution for the HRX Hiring Challenge.
                 └── default-compile
                     ├── createdFiles.lst
                     └── inputFiles.lst
----
+```
 
-## How to Run
+### Build & Run Instructions
 
-1. Ensure you have **Java 17+** and **Maven** installed.
-2. Build the project and create the JAR:
+1. Ensure Java 17+ and Maven are installed.
+2. Clone the repository.
+3. Run the following commands:
 
 ```bash
-mvn clean packag
+mvn clean package  # Builds the project and generates the JAR
+java -jar target/hrx-challenge-1.0.0.jar  # Runs the application
 ```
-Run the JAR:
-```bash
-java -jar target/hrx-challenge-1.0.0.jar
-```
+
+4. The application will automatically submit the SQL query to the webhook.
+
+### Important Files
+
+* `src/main/java/com/example/hrxchallenge/HrxChallengeApplication.java` : Main Spring Boot application.
+* `final-query.txt` : Contains the generated SQL query.
+* `target/hrx-challenge-1.0.0.jar` : Runnable JAR output.
+* `pom.xml` : Maven project file.
+* `README.md` : This documentation.
+
+### Submission
+
+* GitHub Repository: \[Your Repo Link Here]
+* Public JAR file (downloadable): Also available in github repo
