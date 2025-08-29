@@ -31,10 +31,9 @@ Copy code
 2. Build the project and create the JAR:
 
 ```bash
-mvn clean package
-Run the JAR:
+mvn clean packag
 ```
+Run the JAR:
 ```bash
-Copy code
 java -jar target/hrx-challenge-1.0.0.jar
 ```
