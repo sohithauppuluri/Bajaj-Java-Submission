@@ -69,4 +69,4 @@ java -jar target/hrx-challenge-1.0.0.jar  # Runs the application
 ### Submission
 
 * GitHub Repository: \[Your Repo Link Here]
-* Public JAR file (downloadable): Also available in github repo
+* Public JAR file (downloadable): https://drive.google.com/file/d/1xYpyPjUtApUPcccfT0u8wufHQU_umhVR/view?usp=drivesdk
